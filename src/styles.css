@@ -1,3 +1,263 @@
 body {
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  font-size: 0.85em;
+  padding-top: 2%;
+}
+
+.textmid {
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.textmidtitle {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.bottomtitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.ital {
+  font-style: italic;
+}
+
+#bottomtitlelight {
+  font-weight: lighter;
+}
+
+#toppic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 7.png");
+  background-size: 100% 100%;
+  height: 800px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#firstbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 10.png");
+  position: relative;
+}
+
+#secondbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 12.png");
+  position: relative;
+}
+
+#thirdbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 15.png");
+  position: relative;
+}
+
+#centerlog1 {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+}
+
+#centerlog2 {
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+#centerlog3 {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+.menuitem {
+  display: inline-block;
+  margin: 1% 1% 1% 1%;
+  vertical-align: middle;
+}
+
+.logoitem {
+  display: inline-block;
+  margin: 1% 3% 1% 3%;
+  vertical-align: middle;
+}
+
+.capit {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dback {
+  background: #f7f7f7;
+  height: 469px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.lback {
+  background: #ffffff;
+}
+
+.blback {
+  background: rgb(40, 47, 53);
+  height: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.iconbigtext {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.iconsmalltext {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+.maintext {
+  padding: 0 15% 0 15%;
+  font-size: 0.85em;
+  font-weight: lighter;
+  line-height: 2.3;
+}
+
+.lineundertext {
+  margin-left: 45%;
   font-family: sans-serif;
+}
+
+.centercont {
+  padding-top: 7%;
+}
+
+.midgrid {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "bigpic1 bigpic1 bigpic1 textarea1"
+    "bigpic1 bigpic1 bigpic1 textarea1"
+    "bigpic1 bigpic1 bigpic1 horpic1"
+    "textarea2 bigpic2 bigpic2 bigpic2"
+    "textarea2 bigpic2 bigpic2 bigpic2"
+    "horpic2 bigpic2 bigpic2 bigpic2"
+    "midpic1 textarea3 textarea3 midpic2"
+    "midpic1 textarea3 textarea3 midpic2"
+    "midpic1 horpic3 horpic3 midpic2";
+}
+
+.horpic1 {
+  grid-area: horpic1;
+}
+
+.horpic2 {
+  grid-area: horpic2;
+}
+
+.horpic3 {
+  grid-area: horpic3;
+}
+
+.bigpic1 {
+  grid-area: bigpic1;
+}
+
+.bigpic2 {
+  grid-area: bigpic2;
+}
+
+.textarea1 {
+  grid-area: textarea1;
+}
+
+.textarea2 {
+  grid-area: textarea2;
+}
+
+.textarea3 {
+  grid-area: textarea3;
+}
+
+.midpic1 {
+  grid-area: midpic1;
+}
+
+.midpic2 {
+  grid-area: midpic2;
+}
+
+.bottomgrid {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "tinypic1 tinypic2 midpic3 midpic4 widepic1 widepic1"
+    "widepic2 widepic2 midpic3 midpic4 tinypic3 tinypic4";
+}
+
+.midpic3 {
+  grid-area: midpic3;
+}
+
+.midpic4 {
+  grid-area: midpic4;
+}
+
+.widepic1 {
+  grid-area: widepic1;
+}
+
+.widepic2 {
+  grid-area: widepic2;
+}
+
+.tinypic1 {
+  grid-area: tinypic1;
+}
+
+.tinypic2 {
+  grid-area: tinypic2;
+}
+
+.tinypic3 {
+  grid-area: tinypic3;
+}
+
+.tinypic4 {
+  grid-area: tinypic4;
+}
+
+.discoverbutton {
+  background: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  padding: 15px 45px 15px 45px;
+  cursor: pointer;
+  color: #ffffff;
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+.discoverbutton:hover {
+  background: gray;
 }
