@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -7,17 +7,37 @@ nav {
   padding-top: 2%;
 }
 
-.gridnav {
-  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-}
-
-.gridcontainer {
-  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-}
-
 .textmid {
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.textmidtitle {
   text-align: center;
   margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.bottomtitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.ital {
+  font-style: italic;
+  color: rgb(90, 90, 90);
+}
+
+#bottomtitlelight {
+  font-weight: lighter;
+  color: rgb(90, 90, 90);
+}
+
+#tweettext {
+  margin-top: 25px;
+  max-width: 800px;
+  position: absolute;
+  left: 25%;
 }
 
 #toppic {
@@ -29,10 +49,49 @@ nav {
   margin-right: auto;
 }
 
+#firstbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 10.png");
+  position: relative;
+}
+
+#secondbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 12.png");
+  position: relative;
+}
+
+#thirdbigpic {
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 15.png");
+  position: relative;
+}
+
+#centerlog1 {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+}
+
+#centerlog2 {
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+#centerlog3 {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
 .menuitem {
   display: inline-block;
   margin: 1% 1% 1% 1%;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+.menuitem:hover {
+  color: #64c29e;
+  text-shadow: 1px 1px 5px #50967b;
 }
 
 .logoitem {
@@ -52,27 +111,90 @@ nav {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.dback2 {
+  background: #f7f7f7;
+  height: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .lback {
   background: #ffffff;
+  height: 469px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
-.iconitem {
+.lback2 {
+  background: #ffffff;
+  height: 445px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.blback {
+  background: rgb(40, 47, 53);
+  height: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.iconbigtext {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
 }
 
+.iconbigtext2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.iconsmalltext {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
 .maintext {
   padding: 0 15% 0 15%;
-  font-size: 0.75em;
+  font-size: 0.85em;
   font-weight: lighter;
+  line-height: 2.3;
+  color: grey;
+  font-weight: bold;
+}
+
+.lineundertext {
+  margin-left: 45%;
+  font-family: sans-serif;
 }
 
 .centercont {
-  padding-top: 10%;
+  padding-top: 7%;
+}
+
+.centercont2 {
+  padding-top: 5%;
+
 }
 
 .midgrid {
@@ -114,10 +236,6 @@ nav {
   grid-area: bigpic2;
 }
 
-.bigpic3 {
-  grid-area: bigpic3;
-}
-
 .textarea1 {
   grid-area: textarea1;
 }
@@ -136,4 +254,134 @@ nav {
 
 .midpic2 {
   grid-area: midpic2;
+}
+
+.bottomgrid {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "tinypic1 tinypic2 midpic3 midpic4 widepic1 widepic1"
+    "widepic2 widepic2 midpic3 midpic4 tinypic3 tinypic4";
+}
+
+.midpic3 {
+  grid-area: midpic3;
+}
+
+.midpic4 {
+  grid-area: midpic4;
+}
+
+.widepic1 {
+  grid-area: widepic1;
+}
+
+.widepic2 {
+  grid-area: widepic2;
+}
+
+.tinypic1 {
+  grid-area: tinypic1;
+}
+
+.tinypic2 {
+  grid-area: tinypic2;
+}
+
+.tinypic3 {
+  grid-area: tinypic3;
+}
+
+.tinypic4 {
+  grid-area: tinypic4;
+}
+
+.discoverbutton {
+  background: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  padding: 15px 45px 15px 45px;
+  cursor: pointer;
+  color: #ffffff;
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+.discoverbutton:hover {
+  background: gray;
+}
+
+.emailform {
+  background: #ffffff00;
+  border-width: 1px;
+  border-color: rgba(128, 128, 128, 0.199);
+  padding: 20px 200px 20px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.85em;
+  margin-right: 5px;
+  font-style: italic;
+  color: grey;
+  display: flex;
+  margin-left: 21%;
+  margin-right: 3px;
+}
+
+.gobutton {
+  padding: 12px 35px 15px 35px;
+  background: #64c29e;
+  border-width: 0px;
+  font-size: 1.3em;
+  color: whitesmoke;
+  display: flex;
+  margin-left: 3px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.gobutton:hover {
+  background: #50967b;
+}
+
+.footera1 {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+
+.footera2 {
+  margin-top: -12px;
+  font-size: 0.78em;
+  font-style: italic;
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+
+.footeraddress {
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 15%;
+}
+
+.footerlogos {
+  position: absolute;
+  margin-top: 5.3%;
+  margin-left: 50%;
+  cursor: pointer;
+}
+.footerby {
+  position: absolute;
+  margin-top: 5.3%;
+  margin-left: 75%;
+}
+
+.yebo {
+  font-family: "Pacifico", cursive;
+  font-size: 1.2em;
+  cursor: pointer;
 }
