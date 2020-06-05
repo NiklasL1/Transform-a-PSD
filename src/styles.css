@@ -3,24 +3,26 @@ body {
 }
 
 nav {
-  font-size: 0.85em;
+  font-size: 1em;
   padding-top: 2%;
 }
 
 .textmid {
   text-align: left;
-  margin-bottom: 2%;
 }
 
 .textmidtitle {
-  text-align: center;
-  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
 .bottomtitle {
   text-align: center;
   font-weight: bold;
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 .ital {
@@ -33,44 +35,27 @@ nav {
   color: rgb(90, 90, 90);
 }
 
-#tweettext {
-  margin-top: 25px;
-  max-width: 800px;
-  position: absolute;
-  left: 25%;
-}
-
 #toppic {
   background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 7.png");
   background-size: 100% 100%;
-  height: 800px;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#centerlog1 {
-  position: absolute;
-  top: 40%;
-  left: 44%;
-}
-
-#centerlog2 {
-  position: absolute;
-  top: 38%;
-  left: 42%;
-}
-
-#centerlog3 {
-  position: absolute;
-  top: 45%;
-  left: 30%;
+  min-height: 70vh;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #widepicback {
+  grid-area: widepic1;
   background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 23.png");
   position: relative;
   z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-size: cover;
 }
 
 #widepicback:after {
@@ -86,24 +71,13 @@ nav {
   opacity: 0.8;
 }
 
-#centershape {
-  position: absolute;
-  top: 38%;
-  left: 45%;
-}
-
 #shopnow {
-  position: absolute;
-  top: 47%;
-  left: 41%;
   color: white;
+  font-weight: bold;
 }
 
 .menuitem {
-  display: inline-block;
-  margin: 1% 1% 1% 1%;
-  vertical-align: middle;
-  cursor: pointer;
+  font-weight: bold;
 }
 
 .menuitem2 {
@@ -115,6 +89,7 @@ nav {
 .menuitem:hover {
   color: #64c29e;
   text-shadow: 1px 1px 5px #50967b;
+  cursor: pointer;
 }
 
 .logoitem {
@@ -130,8 +105,8 @@ nav {
 
 .dback {
   background: #f7f7f7;
-  height: 469px;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -139,17 +114,19 @@ nav {
 
 .dback2 {
   background: #f7f7f7;
-  height: 200px;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .lback {
   background: #ffffff;
-  height: 469px;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -157,8 +134,8 @@ nav {
 
 .lback2 {
   background: #ffffff;
-  height: 445px;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -166,57 +143,60 @@ nav {
 
 .blback {
   background: rgb(40, 47, 53);
-  height: 200px;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
 }
 
-.iconbigtext {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3%;
+.setwidth {
+  width: 60%;
 }
 
-.iconbigtext2 {
-  display: block;
+.iconsize {
+  max-width: 52px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3%;
-  margin-top: 3%;
-  cursor: pointer;
+  align-self: space-around;
+}
+
+.iconsize2 {
+  max-width: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: space-around;
 }
 
 .iconsmalltext {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4%;
-  margin-top: 3%;
 }
 
 .maintext {
-  padding: 0 15% 0 15%;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: lighter;
-  line-height: 2.3;
   color: grey;
   font-weight: bold;
 }
 
 .lineundertext {
-  margin-left: 45%;
   font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .centercont {
-  padding-top: 7%;
-}
-
-.centercont2 {
-  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .midgrid {
@@ -246,6 +226,9 @@ nav {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bigpic2 {
@@ -257,6 +240,9 @@ nav {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #midpic1 {
@@ -268,6 +254,9 @@ nav {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #midpic2 {
@@ -327,7 +316,7 @@ nav {
 }
 
 .bottomgrid {
-  max-width: 1600px;
+  min-height: 50vh;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -338,36 +327,92 @@ nav {
     "widepic2 widepic2 midpic3 midpic4 tinypic3 tinypic4";
 }
 
-.midpic3 {
-  grid-area: midpic3;
-}
-
-.midpic4 {
-  grid-area: midpic4;
-}
-
-.widepic1 {
-  grid-area: widepic1;
-}
-
-.widepic2 {
-  grid-area: widepic2;
-}
-
-.tinypic1 {
+#tinypic1 {
   grid-area: tinypic1;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 19.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.tinypic2 {
+#tinypic2 {
   grid-area: tinypic2;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 21.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.tinypic3 {
+#tinypic3 {
   grid-area: tinypic3;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 24.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.tinypic4 {
+#tinypic4 {
   grid-area: tinypic4;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 26.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#midpic3 {
+  grid-area: midpic3;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 22.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#midpic4 {
+  grid-area: midpic4;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 25.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#widepic2 {
+  grid-area: widepic2;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 23.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#widepic2 {
+  grid-area: widepic2;
+  background-image: url("https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/Layer 20.png");
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .discoverbutton {
@@ -375,16 +420,20 @@ nav {
   border-style: solid;
   border-width: 1px;
   border-color: #ffffff;
-  padding: 15px 45px 15px 45px;
+  padding: 1.5% 4.5% 1.5% 4.5%;
   cursor: pointer;
   color: #ffffff;
-  position: absolute;
-  top: 38%;
-  left: 42%;
+  font-weight: bold;
 }
 
 .discoverbutton:hover {
   background: gray;
+}
+
+.emailtop {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .emailform {
@@ -393,24 +442,26 @@ nav {
   border-color: rgba(128, 128, 128, 0.199);
   padding: 20px 200px 20px 15px;
   font-family: "Raleway", sans-serif;
-  font-size: 0.85em;
+  font-size: 1em;
   margin-right: 5px;
   font-style: italic;
   color: grey;
-  display: flex;
-  margin-left: 21%;
   margin-right: 3px;
+}
+
+#emailpad {
+  padding-top: 1%;
+  padding-block-end: 1%;
 }
 
 .gobutton {
   padding: 12px 35px 15px 35px;
   background: #64c29e;
   border-width: 0px;
-  font-size: 1.3em;
+  font-size: 1.6em;
   color: whitesmoke;
   display: flex;
   margin-left: 3px;
-  margin-right: auto;
   cursor: pointer;
 }
 
@@ -426,37 +477,69 @@ nav {
 
 .footera2 {
   margin-top: -12px;
-  font-size: 0.78em;
+  font-size: 0.95em;
   font-style: italic;
   color: rgb(90, 90, 90);
   font-weight: bold;
 }
 
-.footeraddress {
-  position: absolute;
-  margin-top: 4%;
-  margin-left: 15%;
-}
-
-.footerlogos {
-  position: absolute;
-  margin-top: 5.3%;
-  margin-left: 50%;
-  cursor: pointer;
-}
-.footerby {
-  position: absolute;
-  margin-top: 5.3%;
-  margin-left: 75%;
+.footera3 {
+  font-size: 0.95em;
+  font-style: italic;
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .yebo {
   font-family: "Pacifico", cursive;
-  font-size: 1.2em;
+  font-size: 1.35em;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
+#footerlayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footerlayout2 {
+  display: flex;
+  align-items: center;
+}
+
+#footergrid1 {
+  display: grid;
+  width: 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "twitter facebook pinterest";
+}
+
+#twitter {
+  grid-area: twitter;
+  background-image: url(https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/rs3.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+#facebook {
+  grid-area: facebook;
+  background-image: url(https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/rs2.png);
+  width: 35px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+
+#pinterest {
+  grid-area: pinterest;
+  background-image: url(https://raw.githubusercontent.com/NiklasL1/Transform-a-PSD/master/assets/rs1.png);
+  width: 35px;
+  height: 34px;
+}
+
+#@media only screen and (max-width: 480px) {
   #toppic {
     height: 240px;
     width: 480px;
@@ -492,7 +575,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 768px) {
+#@media only screen and (max-width: 768px) {
   #toppic {
     height: 384px;
     width: 768px;
@@ -528,7 +611,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+#@media only screen and (max-width: 1024px) {
   #toppic {
     height: 511px;
     width: 1024px;
@@ -562,10 +645,4 @@ nav {
     height: 127px;
     width: 1024px;
   }
-}
-
-@media only screen and (max-width: 1600px) {
-}
-
-@media only screen and (min-width: 1601px) {
 }
